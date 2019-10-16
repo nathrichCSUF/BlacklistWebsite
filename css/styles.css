@@ -179,6 +179,12 @@ span.psw {
 
 
 /* Nav-bar */
+button {
+  width: auto;
+  border-radius: 5px;
+  font-size: 15px;
+
+}
 
 .navlist button {
   width: auto;
@@ -206,7 +212,7 @@ span.psw {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
+  border-bottom: 2px gray solid;
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -221,6 +227,56 @@ span.psw {
 }
 
 
+.d2 {
+  margin-top: 30px;
+  width: 25%;
+  /* border: solid 1px red; */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.post-wrapper {
+  padding-top: 5px;
+  background-color: rgb(240, 240, 230);
+  border-radius: 5px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 600px;
+  position: relative;
+  overflow: auto;
+  /* border: solid 1px gray; */
+}
+
+
+.post-feed {
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom:5px;
+  background-color: white;
+  position: relative;
+  /* border-bottom: 1px gray solid; */
+
+  width: 98%;
+  left: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.post-feed img {
+  height: 150px;
+  border-radius: 20px;
+}
+
+.post-feed li {
+  text-align: left;
+  margin: 5px;
+}
 
 
 
