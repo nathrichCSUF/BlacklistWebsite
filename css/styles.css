@@ -33,6 +33,7 @@ h1 {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 /* Full-width input fields */
@@ -245,7 +246,7 @@ button {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  height: 600px;
+  height: 500px;
   position: relative;
   overflow: auto;
   /* border: solid 1px gray; */
@@ -272,12 +273,23 @@ button {
   height: 150px;
   border-radius: 20px;
 }
-
-.post-feed li {
-  text-align: left;
-  margin: 5px;
+.post-feed ol {
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
+.post-feed li {
+  /* border: 1px solid blue; */
+  text-align: left;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.post-feed:hover {
+  background-color: rgb(220, 220, 210);
+  font-weight: bold;
+}
 
 
 .create-wrapper {
