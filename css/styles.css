@@ -191,6 +191,7 @@ span.psw {
   /* border: solid 1px blue; */
   position: fixed;
   top: 0;
+  font-family: 'Palanquin Dark', sans-serif;
 }
 
 
@@ -217,4 +218,30 @@ span.psw {
   /* border: solid 1px red; */
   width: 100%;
 
+}
+
+
+
+
+
+.create-wrapper {
+  /* border: 2px solid blue; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  margin: 5% 2% 5% 2%;
+  height: 90%;
+  width: 96%;
+}
+
+
+
+/* On mouse-over, add a deeper shadow */
+.create-wrapper:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
