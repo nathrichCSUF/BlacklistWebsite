@@ -1,7 +1,7 @@
 <?php
 
 // Connect to the BlacklsitWebsite database.
-$dbc = mysqli_connect("localhost", "root", "", "BlacklistWebsite");
+$dbc = mysqli_connect("localhost", "root", "", "blacklistwebsite");
 if (!$dbc) {
     echo "Cannot connect to MySQL. " . mysqli_connect_error();
     exit();
