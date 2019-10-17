@@ -33,6 +33,9 @@ h1 {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: black;
 
 }
 
@@ -188,21 +191,39 @@ button {
 }
 
 .navlist button {
+  /* color: #FCA311; */
+  color: #42c8f5;
+  font-weight: bold;
+  border: 2px solid;
+  background-color: black;
   width: auto;
   float: right;
   border-radius: 5px;
   font-size: 15px;
   margin: 10px;
-  margin-top: 15px;
+  
+  /* margin-top: 15px; */
 }
+
+
+
 .home-title {
   /* border: solid 1px blue; */
   /* position: fixed; */
   top: 0;
+  margin-left: 15px;
   font-family: 'Palanquin Dark', sans-serif;
   float: left;
+  /* color: #FCA311;
+   */
+   color: white;
 }
 
+.navlist ul {
+  display: flex;
+  justify-content: center;
+  
+}
 
 
 .body {
@@ -210,30 +231,59 @@ button {
   top: 50px;
 }
 
+/* .navlist-wrapper {
+  display: inline-block;
+  align-items: center;
+} */
 
 .navlist {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navlist-wrapper{
+
+  z-index: 10;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: black;
+  opacity: 1;
   /* border: 1px solid red; */
-  border-bottom: 2px gray solid;
-  list-style: none;
+  /* border-bottom: 5px #FCA311 solid;
+   */
+   border-bottom: 5px solid white;
+  /* list-style: none; */
   display: block;
   /* display: flex; */
   /* justify-content: flex-end; */
   /* align-items: center; */
+  
 
   position: fixed;
   top: 0;
   left: 0;
   /* border: solid 1px red; */
   width: 100%;
+  height: auto;
 
+}
+.navlist-container {
+  /* used to space the divs after the fixed navbar */
+  left: 0;
+  top: 0;
+  height: 50px;
+  position: relative;
+  /* border: 1px solid blue; */
+  margin: 0;
 }
 
 
 .d2 {
-  margin-top: 30px;
+  position: relative;
+  
   width: 25%;
   /* border: solid 1px red; */
   height: auto;
@@ -243,17 +293,30 @@ button {
   align-items: center;
 }
 
+.d2 button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* color: #FCA311; */
+  color: #42c8f5;
+  border: 2px solid;
+  background-color: black;
+  font-weight: bold;
+}
+
 .post-wrapper {
   padding-top: 5px;
-  background-color: rgb(240, 240, 230);
+  /* background-color: rgb(240, 240, 230); */
+  background-color: black;
   border-radius: 5px;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  height: 500px;
+  height: 700px;
+  min-height: 300px;
   position: relative;
-  overflow: auto;
-  /* border: solid 1px gray; */
+  overflow: hidden auto;
+  /* border: solid 3px #FCA311; */
+  border: solid 3px white;
 }
 
 
@@ -261,7 +324,9 @@ button {
   border-radius: 5px;
   margin-top: 5px;
   margin-bottom:5px;
-  background-color: white;
+  /* background-color: #14213D; */
+  background-color: black;
+  color: #e5e5e5;
   position: relative;
   /* border-bottom: 1px gray solid; */
 
@@ -293,6 +358,7 @@ button {
 .post-feed:hover {
   background-color: rgb(220, 220, 210);
   font-weight: bold;
+  color: #14213D;
 }
 
 
