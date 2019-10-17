@@ -189,6 +189,7 @@ button {
 
 .navlist button {
   width: auto;
+  float: right;
   border-radius: 5px;
   font-size: 15px;
   margin: 10px;
@@ -196,9 +197,10 @@ button {
 }
 .home-title {
   /* border: solid 1px blue; */
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   font-family: 'Palanquin Dark', sans-serif;
+  float: left;
 }
 
 
@@ -213,11 +215,13 @@ button {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border-bottom: 2px gray solid;
+  border: 1px solid red;
+  /* border-bottom: 2px gray solid; */
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  display: block;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* align-items: center; */
 
   position: fixed;
   top: 0;
