@@ -7,6 +7,8 @@ if (!$dbc) {
     exit();
 }
 
+mysqli_set_charset($dbc, 'utf8');
+
 // Take user input from create_account.html and insert into accounts table.
 $username = $_POST['username'];
 $password = $_POST['password'];
