@@ -229,6 +229,7 @@ button {
    color: white;
 }
 
+
 .navlist ul {
   display: flex;
   justify-content: center;
@@ -335,6 +336,7 @@ button {
   border-radius: 5px;
   margin-top: 15px;
   margin-bottom:15px;
+  padding: 10px;
   /* background-color: #14213D; */
   background-color: black;
   color: #e5e5e5;
