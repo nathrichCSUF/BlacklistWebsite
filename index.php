@@ -34,7 +34,7 @@
     <a href="login.html"><button class="b1" type="button">Login</button></a>
   </div> -->
   <div class="d2">
-    <a href="blackmail_view.html"><button class="b2" type="button">View Blackmails</button></a>
+    <a href="blackmail_view.html"><button class="b2" type="button">View Your Blackmails</button></a>
     <a href="blackmail_create.html"><button class="b2" type="button">Create a Blackmail</button></a>
   </div>
   <div class="BlackmailList">
@@ -52,7 +52,7 @@
         while($row = $r->fetch_assoc()){ //output data
           echo "<div class = 'post-feed'>";
           echo "<form method='post' action = 'payRansom.php'>";
-          
+
             echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
             echo   "<img src = ".$row['image'].">"; //Show image from link
             echo "</br><b>".$row['title']."</b></br>";
