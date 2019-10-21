@@ -50,17 +50,28 @@
       if ($r){ //If results came back
         echo "<div class = 'post-wrapper'>";
         while($row = $r->fetch_assoc()){ //output data
-          echo "<div class = 'post-feed'>";
-          echo "<form method='post' action = 'payRansom.php'>";
           
-            echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
+          echo "<form method='post' action = 'payRansom.php'>";
+          echo "<div class = 'post-feed'>";
+          echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
+          
+          echo "<div class='img-wrapper'>";
+            echo "<b>".$row['title']."</b>";
             echo   "<img src = ".$row['image'].">"; //Show image from link
-            echo "</br><b>".$row['title']."</b></br>";
-            echo "<b>Demands</b>";
+            echo "</div>";
+
+            echo "<div class='demand-wrapper'>";
+            echo "<b>Demand(s)</b>";
             echo "<ul>";
             echo  "<li>".$row["demandList"]."</li>";
             echo "</ul>";
+            echo "</div>";
+
+
+            echo "<div class='ransom-wrapper'>";
             echo "<input type = 'submit'/ value='Pay Ransom'>";
+            echo "</div>";
+            
           echo "</form>";
           echo "</div>";
 

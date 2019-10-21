@@ -190,11 +190,21 @@ button {
 
 }
 
+.b1:hover {
+  background-color: #fa2828;
+  color: black;
+}
+
+.b2:hover {
+  background-color: #fa2828;
+  color: black;
+}
+
 .navlist button {
   /* color: #FCA311; */
   color: #fa2828;
   font-weight: bold;
-  border: 2px solid;
+  border: 2px solid #fa2828;
   background-color: black;
   width: auto;
   float: right;
@@ -298,9 +308,10 @@ button {
   margin-bottom: 20px;
   /* color: #FCA311; */
   color: #fa2828;
-  border: 2px solid;
+  border: 2px solid #fa2828;
   background-color: black;
   font-weight: bold;
+  
 }
 
 .post-wrapper {
@@ -329,7 +340,6 @@ button {
   color: #e5e5e5;
   position: relative;
   /* border-bottom: 1px gray solid; */
-
   width: 98%;
   left: 1%;
   display: flex;
@@ -338,14 +348,55 @@ button {
   align-items: center;
 }
 
+
 .post-feed img {
   height: 150px;
   border-radius: 20px;
 }
-.post-feed ol {
-  width: 50%;
-  border: 2px solid black;
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+  height: 170px;
+  /* border: 1px solid red; */
+}
+
+.demand-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 170px;
+  /* border: 1px solid red; */
+}
+
+.ransom-wrapper {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 170px;
+  /* border: 1px solid red; */
+}
+
+.ransom-wrapper input {
+  background-color: black;
+  border: 2px solid #fa2828;
+  color: #fa2828;
+  font-size: 15px;
   border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.ransom-wrapper input:hover {
+  background-color: #fa2828;
+  color: black;
 }
 
 .post-feed li {
