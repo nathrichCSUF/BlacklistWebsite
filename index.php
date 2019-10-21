@@ -9,6 +9,7 @@
 
   </div>
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -49,7 +50,9 @@
       if ($r){ //If results came back
         echo "<div class = 'post-wrapper'>";
         while($row = $r->fetch_assoc()){ //output data
+          echo "<div class = 'post-feed'>";
           echo "<form method='post' action = 'payRansom.php'>";
+          
             echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
             echo   "<img src = ".$row['image'].">"; //Show image from link
             echo "</br><b>".$row['title']."</b></br>";
@@ -59,6 +62,7 @@
             echo "</ul>";
             echo "<input type = 'submit'/ value='Pay Ransom'>";
           echo "</form>";
+          echo "</div>";
 
         }
         echo"</div>";
