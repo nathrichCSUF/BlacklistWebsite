@@ -358,15 +358,18 @@ button {
   text-align: center;
 }
 @keyframes slides {
+  0% {
+    display: none;
+  }
   100% {
-    height: 100px;
-    /* display: block; */
+    /* height: 100px; */
+    display: block;
   }
 }
 .post-feed:hover .post-feed-desc {
   background-color: #e5e5e5;
   display: block;
-  animation: slides 1s forwads;
+  /* animation: slides 1s forwads; */
   /* display: block; */
 }
 .post-feed:hover .post-feed-wrapper {
