@@ -5,6 +5,9 @@
   <meta charset="utf-8">
 
   <title>The Blacklist</title>
+  <div class = "user_greeting" id = "userGreeting">
+
+  </div>
 </head>
 <?php include "stylesheets/styles.css" ?>
 <body>
@@ -30,13 +33,17 @@
       if ($r){ //If results came back
         echo "<div class = 'post-feed'>";
         while($row = $r->fetch_assoc()){ //output data
-          echo   "<img src = ".$row['image'].">"; //Show image from link
+          echo "<form method='post' action = 'payRansom.php'>";
+            echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
+            echo   "<img src = ".$row['image'].">"; //Show image from link
+            echo "</br><b>".$row['title']."</b></br>";
+            echo "<b>Demands</b>";
+            echo "<ul>";
+            echo  "<li>".$row["demandList"]."</li>";
+            echo "</ul>";
+            echo "<input type = 'submit'/ value='Pay Ransom'>";
+          echo "</form>";
 
-          echo "</br><b>".$row['title']."</b></br>";
-          echo "<b>Demands</b>";
-          echo "<ul>";
-          echo  "<li>".$row["demandList"]."</li>";
-          echo "</ul>";
         }
         echo"</div>";
       }

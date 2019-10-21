@@ -1,4 +1,4 @@
-  var mysql = require("mysql");
+/*  var mysql = require("mysql");
 (function (window) {
   "use strict";
   var App = window.App || {};
@@ -20,3 +20,4 @@
 
 ConnecttoDB();
 })(window);
+*/
