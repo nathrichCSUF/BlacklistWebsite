@@ -17,9 +17,9 @@
 <div class="navlist-wrapper">
     <h1 class="home-title">THE BLACKLIST</h1>
     <ul class="navlist">
-    
+
       <li>
-      <a href="account.html"><button class="b1" type="button">Create Account</button></a>
+      <a href="create_account.html"><button class="b1" type="button">Create Account</button></a>
       </li>
       <!-- <li>
       <a href="login.html"><button class="b1" type="button">Login</button></a>
