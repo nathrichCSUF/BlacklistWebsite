@@ -329,6 +329,8 @@ button {
   overflow: hidden auto;
   /* border: solid 3px #FCA311; */
   border: solid 3px white;
+  box-shadow: 0 4px 8px 0 rgba(250,40,40,0.5);
+  transition: 0.3s;
 }
 
 
@@ -430,20 +432,34 @@ span {
 .create-wrapper {
   /* border: 2px solid blue; */
   color: #fa2828;
-  
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(250,40,40,0.2);
+  box-shadow: 0 4px 8px 0 rgba(250,40,40,0.5);
   transition: 0.3s;
+  border-radius: 5px;
+  border: 3px solid white;
 
   margin: 5% 2% 5% 2%;
-  height: 90%;
-  
+  height: 500px;
   width: 96%;
 }
 
+.create-container label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.create-container button {
+  border-radius: 5px;
+  color: #fa2828;
+  border: 2px solid #fa2828;
+  background-color: black;
+  font-size: 20px;
+  padding: 10px;
+}
 
 
 /* On mouse-over, add a deeper shadow */
@@ -456,11 +472,18 @@ span {
 }
 
 .create-wrapper input {
-
+  padding: 10px;
   border: 2px solid #fa2828;
   border-radius: 5px;
 
   background-color: black;
   color: #fa2828;
   font-size: 20px;
+}
+
+
+.create-wrapper input:hover, .create-container button:hover {
+  background-color: #fa2828;
+  color: black;
+
 }
