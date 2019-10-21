@@ -428,6 +428,10 @@ span {
   color: #fa2828;
 }
 
+.create-wrapper h1 {
+  font-family: 'Palanquin Dark', sans-serif;
+  color: white;
+}
 
 .create-wrapper {
   /* border: 2px solid blue; */
