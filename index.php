@@ -8,8 +8,8 @@
   <div class = "user_greeting" id = "userGreeting">
 
   </div>
+    <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
-<?php include "stylesheets/styles.css" ?>
 <body>
   <h1>THE BLACKLIST</h1>
   <div class="d1">
