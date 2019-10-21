@@ -38,9 +38,11 @@ if ($row) {
             exit();
         } else {
             echo "Account successfully created!";
+            echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
         }
     } else {
         echo "This account already exists!";
+        echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
         exit();
     }
 } else {
@@ -54,16 +56,7 @@ if ($row) {
         exit();
     } else {
         echo "Account successfully created!";
+        echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
     }
 }
 ?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-      <a href="index.php"><button type="button">Return to homepage</button></a>
-  </body>
-</html>

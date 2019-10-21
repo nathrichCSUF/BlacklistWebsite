@@ -21,20 +21,12 @@
       <li>
       <a href="create_account.html"><button class="b1" type="button">Create Account</button></a>
       </li>
-      <!-- <li>
-      <a href="login.html"><button class="b1" type="button">Login</button></a>
-      </li> -->
     </ul>
   </div>
 </div>
 
-  <!-- <h1 class="home-title">THE BLACKLIST</h1>
-  <div class="d1">
-    <a href="login.html"><button class="b1" type="button">Login</button></a>
-    <a href="login.html"><button class="b1" type="button">Login</button></a>
-  </div> -->
   <div class="d2">
-    <a href="blackmail_view.html"><button class="b2" type="button">View Blackmails</button></a>
+    <a href="blackmail_view.html"><button class="b2" type="button">View Your Blackmails</button></a>
     <a href="blackmail_create.html"><button class="b2" type="button">Create a Blackmail</button></a>
   </div>
   <div class="BlackmailList">
