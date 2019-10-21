@@ -48,12 +48,12 @@
           echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
           
           echo "<div class='img-wrapper'>";
-            echo "<b>".$row['title']."</b>";
+            echo "<span>".$row['title']."</span>";
             echo   "<img src = ".$row['image'].">"; //Show image from link
             echo "</div>";
 
             echo "<div class='demand-wrapper'>";
-            echo "<b>Demand(s)</b>";
+            echo "<span>Demand(s)</span>";
             echo "<ul>";
             echo  "<li>".$row["demandList"]."</li>";
             echo "</ul>";
