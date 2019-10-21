@@ -386,7 +386,6 @@ button {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
   height: 180px;
   /* border: 1px solid red; */
 }
@@ -404,6 +403,7 @@ button {
 .ransom-wrapper input:hover {
   background-color: #28fa28;
   color: black;
+  border: 2px solid black;
 }
 
 span {
