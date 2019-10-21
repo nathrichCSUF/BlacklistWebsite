@@ -42,11 +42,11 @@
       if ($r){ //If results came back
         echo "<div class = 'post-wrapper'>";
         while($row = $r->fetch_assoc()){ //output data
-
+          
           echo "<form method='post' action = 'payRansom.php'>";
           echo "<div class = 'post-feed'>";
           echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
-
+          
           echo "<div class='img-wrapper'>";
             echo "<b>".$row['title']."</b>";
             echo   "<img src = ".$row['image'].">"; //Show image from link
@@ -63,7 +63,7 @@
             echo "<div class='ransom-wrapper'>";
             echo "<input type = 'submit'/ value='Pay Ransom'>";
             echo "</div>";
-
+            
           echo "</form>";
           echo "</div>";
 
