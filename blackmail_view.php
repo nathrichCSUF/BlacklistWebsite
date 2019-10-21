@@ -28,32 +28,40 @@
       ";
       $inputPassword = $row['password'];
       if ($inputPassword!=$password){
-        echo "Wrong credentials";
-        echo "Go back to login page or click link below to create account";
-        echo "<a href='create_account.html'>Create Account!</a>";
+        echo "<div class='create-wrapper'>";
+        echo "<h1>Wrong credentials</h1>";
+        echo "<h2>Go back to login page or click link below to create account</h2>";
+        echo "<div class='create-container'>";
+        echo "<a href='create_account.html'><button type='button'>Create Account!</button></a>";
+        echo "</div>";
+        echo "</div>";
       }
       else{
         $r2 = mysqli_query($dbc,$q2);
 
-          echo "<div>";
+          echo "<div class='post-wrapper'>";
           while($row2 = $r2->fetch_assoc())
           {
+              echo "<div class='post-feed'>";
+              echo "<div class='post-feed-wrapper'>";
               echo "<div class='img-wrapper'>";
-              echo "<b>".$row2['title']."</b>";
+              echo "<span>".$row2['title']."</span>";
               echo   "<img src = ".$row2['image'].">"; //Show image from link
-              echo "</div>";
+              echo "</div>"; //end img-wrapper
 
               echo "<div class='demand-wrapper'>";
-              echo "<b>Demand(s)</b>";
+              echo "<span>Demand(s)</span>";
               echo "<ul>";
               echo  "<li>".$row2['demandList']."</li>";
               echo "</ul>";
+              echo "</div>"; //end demand-wrapper
+              echo "</div>"; //end post-feed-wrapper
               if($row2['isPaid']){
                 echo "<b>Paid Off!</b>";
               }
-              echo "</div>";
+              echo "</div>"; //end post-feed
           }
-          echo "</div>";
+          echo "</div>"; //end post-wrapper
 
       }
  ?>
