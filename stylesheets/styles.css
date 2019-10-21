@@ -315,7 +315,7 @@ button {
 }
 
 .post-wrapper {
-  padding-top: 5px;
+  /* padding-top: 15px; */
   /* background-color: rgb(240, 240, 230); */
   background-color: black;
   border-radius: 5px;
@@ -333,8 +333,8 @@ button {
 
 .post-feed {
   border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom:5px;
+  margin-top: 15px;
+  margin-bottom:15px;
   /* background-color: #14213D; */
   background-color: black;
   color: #e5e5e5;
