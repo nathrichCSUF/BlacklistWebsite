@@ -283,7 +283,7 @@ button {
 
 .d2 {
   position: relative;
-  
+  margin-top: 50px;
   width: 25%;
   /* border: solid 1px red; */
   height: auto;
@@ -293,7 +293,7 @@ button {
   align-items: center;
 }
 
-.d2 button {
+.b2 {
   margin-top: 20px;
   margin-bottom: 20px;
   /* color: #FCA311; */
