@@ -37,8 +37,7 @@ How to get our website running:
                           userID int(5),
                           FOREIGN KEY (userID) REFERENCES account(userID)
                         );"
-<li>Create a user.</li>
-> Go to "Privileges", select "Add user account",
+<li>Create a user.</li>Go to "Privileges", select "Add user account",
         for "User name:" enter "bl_user", for "Password:" enter "TheBoys123!",
         retype password, hit the "Check all" box for "Global Privileges",
         hit "Go".
