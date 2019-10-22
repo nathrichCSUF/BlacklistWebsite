@@ -15,11 +15,11 @@ How to get our website running:
 <li>Move /BlacklistWebsite to your web server's /htdocs folder</li>
 <li>Start up your web server & MySQL (We are using XAMPP & phpMyAdmin)</li>
 <li>Create a database called "blacklistwebsite" and use it.</li>
-        MySQL commands: "CREATE DATABASE blacklistwebsite;"  
+>        MySQL commands: "CREATE DATABASE blacklistwebsite;"  
                         "use blacklistwebsite;"
 
 <li>Create two tables, account & blackmail.</li>
-        MySQL commands: "CREATE TABLE account (
+>        MySQL commands: "CREATE TABLE account (
                           userID int(5) PRIMARY KEY,
                           username varchar(10),
                           password varchar(10)
@@ -37,7 +37,7 @@ How to get our website running:
                           userID int(5),
                           FOREIGN KEY (userID) REFERENCES account(userID)
                         );"
-<li>Create a user.</li>  Go to "Privileges", select "Add user account",
+<li>Create a user.</li>>  Go to "Privileges", select "Add user account",
         for "User name:" enter "bl_user", for "Password:" enter "TheBoys123!",
         retype password, hit the "Check all" box for "Global Privileges",
         hit "Go".
