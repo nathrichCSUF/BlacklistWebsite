@@ -21,11 +21,11 @@
     $q = "SELECT * FROM Account WHERE Username = '$username'AND Password = '$password'";
     $r = mysqli_query($dbc, $q);
 
-    
+
       $row =$r->fetch_assoc();
       $inputPassword = $row['password'];
       if ($inputPassword!=$password){
-	echo "<div class='create-wrapper'>";      
+	echo "<div class='create-wrapper'>";
 	echo "<h1>Wrong credentials</h1>";
 	echo "<div class='create-container'>";
         echo "<h2>Go back to login page or click link below to create account</h2>";
@@ -47,10 +47,10 @@
         <input class='t2' type='text' name='demands' value='' required>
 
         <label for='t3'>Description</label>
-        <input class='t3' type='text' name='description' value=''>
+        <input class='t3' type='text' name='description' value='' required>
 
-        <label for='t4'>Upload an image</label>
-        <input class='t4' type='text' name='imageURL' accept='.jpg, .jpeg, .png' >
+        <label for='t4'>Image URL</label>
+        <input class='t4' type='url' name='imageURL' accept='.jpg, .jpeg, .png' required>
 
         <input type='submit' name='' value='Submit'>
       </form>

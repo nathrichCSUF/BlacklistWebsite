@@ -41,4 +41,24 @@ How to get our website running:
         for "User name:" enter "bl_user", for "Password:" enter "TheBoys123!",
         retype password, hit the "Check all" box for "Global Privileges",
         hit "Go".
+1. Sample Usage Scenario
+	a. Creating an account
+		- From index.php, click "Create Account".
+		- Enter a username and Password.
+		- Click "Submit".
+		- Click "Return to homepage".
+	b. Creating a blackmail
+		- From index.php, click "Create a Blackmail".
+		- Enter login credentials. Click "Submit".
+		- Enter a title, demands, description, image URL.
+		- Click "Submit"
+		- Click "Return to homepage"
+		- The created blackmail should show up on the homepage.
+	c. View your blackmails
+		- From index.php, click "View your Blackmails"
+		- Enter login credentials. Click "Submit".
+		- View your blackmails until you get bored.
+		- Click "Return to homepage"
+	d. Pay a ransom
+		- From index.php, click "Pay Ransom" for a blackmail.
 </ol>
