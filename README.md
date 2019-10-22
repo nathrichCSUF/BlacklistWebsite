@@ -20,14 +20,15 @@ Members:
        <li>"CREATE DATABASE blacklistwebsite;"</li>
        <li>"use blacklistwebsite;"</li>
      </ol>
+<li>Create two tables, account & blackmail.</li>
+		 MySQL commands:
+		  <ol>
+		    <li>"CREATE TABLE account (userID int(5) PRIMARY KEY, username varchar(10), password varchar(10));"</li>
+		    <li>"CREATE TABLE blackmail (postid INT(4) PRIMARY KEY, title VARCHAR(100), description VARCHAR(470),
+		      demandlist VARCHAR(470), image VARCHAR(400), ispaid BOOLEAN, likecount INT(11), dislikecount INT(11),
+		      userid INT(5), FOREIGN KEY (userid) REFERENCES account(userid));"</li>
+		  </ol>
 
-		 <li>Create two tables, account & blackmail.</li>
-		      MySQL commands:
-		      <ol>
-		        <li>"CREATE TABLE account (userID int(5) PRIMARY KEY, username varchar(10), password varchar(10));"</li>
-						<li>"CREATE TABLE blackmail (postid INT(4) PRIMARY KEY, title VARCHAR(100), description VARCHAR(470),
-						         demandlist VARCHAR(470), image VARCHAR(400), ispaid BOOLEAN, likecount INT(11), dislikecount INT(11),
-						         userid INT(5), FOREIGN KEY (userid) REFERENCES account(userid));"</li>
 <li>Create a user.</li>
 	<ol>
 		<li>Go to "Privileges"</li>
