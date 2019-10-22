@@ -1,3 +1,10 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark&display=swap" rel="stylesheet">
+    </head>
+</html>
 <?php
 // Make connection
 $dbc = mysqli_connect("localhost", "bl_user", "TheBoys123!", "blacklistwebsite");
@@ -20,8 +27,11 @@ if (!$r) {
     echo "Update isPaid failed. " . mysqli_error($dbc);
     exit();
 }
-
+echo "<div class='create-wrapper'>";
 echo "<h1>The ransom has been paid.</h1>";
+echo "<div class='create-container'>";
 echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+echo "</div>";
+echo "</div>";
 
 ?>
