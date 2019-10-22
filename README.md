@@ -28,7 +28,6 @@ Members:
 		      demandlist VARCHAR(470), image VARCHAR(400), ispaid BOOLEAN, likecount INT(11), dislikecount INT(11),
 		      userid INT(5), FOREIGN KEY (userid) REFERENCES account(userid));"</li>
 		  </ol>
-
 <li>Create a user.</li>
 	<ol>
 		<li>Go to "Privileges"</li>
@@ -40,8 +39,6 @@ Members:
     <li>hit "Go"</li>
 	</ol>
 </ol>
-
-<br>
 
 <h1>Sample Usage Scenario</h1>
 	<ol>Creating an account
