@@ -3,20 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark&display=swap" rel="stylesheet">
   <title>Login</title>
 </head>
 
 <body>
-  <h1>Login to the Blacklist</h1>
-  <form method = "post" action="blackmail_create.php">
-    <label for="username">Username:</label>
-    <input type="text" name="username" required>
-    <label for="password">Password:</label>
-    <input type="password" name="password" required>
-    <input type="submit" value="Submit">
-    <a href="index.php"><button type="button">Return to homepage</button></a>
-  </form>
+  <div class="create-wrapper">
+    <h1>Login to the Blacklist</h1>
+    <form method = "post" action="blackmail_create.php">
+      <div class="create-container">
+      <label for="username">Username:</label>
+      <input type="text" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" name="password" required>
+      <input type="submit" value="Submit">
+      <a href="index.php"><button type="button">Return to homepage</button></a>
+    </div>
+    </form>
+</div>
 </body>
 
 </html>
