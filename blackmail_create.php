@@ -25,13 +25,15 @@
       $row =$r->fetch_assoc();
       $inputPassword = $row['password'];
       if ($inputPassword!=$password){
-	echo "<div class='create-wrapper'>";
-	echo "<h1>Wrong credentials</h1>";
-	echo "<div class='create-container'>";
+	
+  echo "<div class='create-wrapper'>";
+        echo "<h1>Wrong credentials</h1>";
         echo "<h2>Go back to login page or click link below to create account</h2>";
-	echo "<a href='create_account.html'><button type='button'>Create Account!</button></a>";
-	echo "</div>";
-	echo "</div>";
+        echo "<div class='create-container'>";
+        echo "<a href='blackmail_create.html'><button type='button'>Return to Login</button></a>";
+        echo "<a href='create_account.html'><button type='button'>Create Account!</button></a>";
+        echo "</div>";
+        echo "</div>";
       }
       else{
         $userIDRow = $row['userID'];
