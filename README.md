@@ -1,11 +1,13 @@
 # Blacklist Website
 CPSC 349 Project 1 by The Boys: Website to blackmail people and pay ransoms!
 
-Members:\n
-Nathaniel Richards nathrich23@csu.fullerton.edu
-Matthew Nguyen nmatthew45@csu.fullerton.edu
-Yafu Deng yafu123@csu.fullerton.edu
-David Lee 626davidlee@csu.fullerton.edu
+Members:
+<ul>
+	<li>Nathaniel Richards nathrich23@csu.fullerton.edu</li>
+	<li>Matthew Nguyen nmatthew45@csu.fullerton.edu</li>
+	<li>Yafu Deng yafu123@csu.fullerton.edu</li>
+	<li>David Lee 626davidlee@csu.fullerton.edu</li>
+</ul>
 
 How to get our website running:
 Step 1. Download our repo here: https://github.com/nathrichCSUF/BlacklistWebsite
