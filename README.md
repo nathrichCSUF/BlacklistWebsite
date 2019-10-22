@@ -65,3 +65,9 @@ Members:
 		<li>From index.php, click "Pay Ransom" for a blackmail.</li>
 		<li>Click "Return to homepage".</li>
 	</ol>
+	<ol>Search for a blackmail 
+		<li>From index.php, click "Search a Blackmail".</li>
+		<li>Enter a post title. Click "Submit"</li>
+		<li>View blackmails until you get bored.</li>
+		<li>Click "Return to homepage".</li>
+	</ol>
