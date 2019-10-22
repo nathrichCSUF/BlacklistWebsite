@@ -51,7 +51,7 @@ How to get our website running:
 
 <br>
 
-<ol>Sample Usage Scenario
+Sample Usage Scenario
 	<ol>Creating an account</ol>
 		<li>From index.php, click "Create Account".</li>
 		<li>Enter a username and Password.</li>
@@ -71,4 +71,3 @@ How to get our website running:
 		<li>Click "Return to homepage".</li>
 	<ol>Pay a ransom</ol>
 		<li>From index.php, click "Pay Ransom" for a blackmail.</li>
-</ol>
