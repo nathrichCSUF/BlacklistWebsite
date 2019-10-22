@@ -12,8 +12,8 @@ Members:
 How to get our website running:  
 <ol>
 <li>Download our repo here: https://github.com/nathrichCSUF/BlacklistWebsite</li>
-<li>Move /BlacklistWebsite to your web server's /htdocs folder</li>
-<li>Start up your web server & MySQL (We are using XAMPP & phpMyAdmin)</li>
+<li>Move /BlacklistWebsite to your web server's /htdocs folder.</li>
+<li>Start up your web server & MySQL (We are using XAMPP & phpMyAdmin).</li>
 <li>Create a database called "blacklistwebsite" and use it.</li>
         MySQL commands: "CREATE DATABASE blacklistwebsite;"
                         "use blacklistwebsite;"
@@ -37,10 +37,16 @@ How to get our website running:
                           userID int(5),
                           FOREIGN KEY (userID) REFERENCES account(userID)
                         );"
-<li>Create a user.</li> <ol><li>Go to "Privileges"</li>select "Add user account",
-        for "User name:" enter "bl_user", for "Password:" enter "TheBoys123!",
-        retype password, hit the "Check all" box for "Global Privileges",
-        hit "Go".</ol>
+<li>Create a user.</li>
+	<ol>
+		<li>Go to "Privileges"</li>
+		<li>select "Add user account"</li>
+    <li>for "User name:" enter "bl_user"</li>
+		<li>for "Password:" enter "TheBoys123!"</li>
+    <li>retype password</li>
+		<li>hit the "Check all" box for "Global Privileges"</li>
+    <li>hit "Go"</li>
+	</ol>
 <br>
  Sample Usage Scenario
 	a. Creating an account
