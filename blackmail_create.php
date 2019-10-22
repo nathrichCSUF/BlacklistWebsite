@@ -55,6 +55,7 @@
         <input type='submit' name='' value='Submit'>
       </form>
       ";
+      echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
       echo "</div>";
       echo "</div>";
 
