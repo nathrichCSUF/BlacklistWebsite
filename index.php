@@ -56,7 +56,7 @@
               echo "<div class='demand-wrapper'>";
                 echo "<span>Demand(s)</span>";
                 echo "<ul>";
-                echo  "<li>".$row["demandList"]."</li>";
+                echo  "<li>".$row['demandList']."</li>";
                 echo "</ul>";
               echo "</div>";
 
@@ -68,7 +68,7 @@
           echo "</form>";
         echo "</div>";
 
-        echo "<div class='post-feed-desc'>Description: ".$row["description"]."</div>";
+        echo "<div class='post-feed-desc'>Description: ".$row['description']."</div>";
         echo "</div>";
 
         }
