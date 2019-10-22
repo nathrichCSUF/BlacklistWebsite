@@ -47,25 +47,28 @@ How to get our website running:
 		<li>hit the "Check all" box for "Global Privileges"</li>
     <li>hit "Go"</li>
 	</ol>
+</ol>
+
 <br>
- Sample Usage Scenario
-	a. Creating an account
-		- From index.php, click "Create Account".
-		- Enter a username and Password.
-		- Click "Submit".
-		- Click "Return to homepage".
-	b. Creating a blackmail
-		- From index.php, click "Create a Blackmail".
-		- Enter login credentials. Click "Submit".
-		- Enter a title, demands, description, image URL.
-		- Click "Submit"
-		- Click "Return to homepage"
-		- The created blackmail should show up on the homepage.
-	c. View your blackmails
-		- From index.php, click "View your Blackmails"
-		- Enter login credentials. Click "Submit".
-		- View your blackmails until you get bored.
-		- Click "Return to homepage"
-	d. Pay a ransom
-		- From index.php, click "Pay Ransom" for a blackmail.
+
+<ol>Sample Usage Scenario
+	<ol>Creating an account</ol>
+		<li>From index.php, click "Create Account".</li>
+		<li>Enter a username and Password.</li>
+		<li>Click "Submit".</li>
+		<li>Click "Return to homepage".</li>
+	<ol>Creating a blackmail</ol>
+		<li>From index.php, click "Create a Blackmail".</li>
+		<li>Enter login credentials. Click "Submit".</li>
+		<li>Enter a title, demands, description, image URL.</li>
+		<li>Click "Submit".</li>
+		<li>Click "Return to homepage".</li>
+		<li>The created blackmail should show up on the homepage.</li>
+	<ol>View your blackmails</ol>
+		<li>From index.php, click "View your Blackmails".</li>
+		<li>Enter login credentials. Click "Submit".</li>
+		<li>View your blackmails until you get bored.</li>
+		<li>Click "Return to homepage".</li>
+	<ol>Pay a ransom</ol>
+		<li>From index.php, click "Pay Ransom" for a blackmail.</li>
 </ol>
