@@ -42,8 +42,12 @@ if ($row) {
             echo "Insert into account failed. " . mysqli_error($dbc);
             exit();
         } else {
-            echo "Account successfully created!";
+            echo "<div class='create-wrapper'>";
+            echo "<h1>Account successfully created!</h1>";
+            echo "<div class='create-container'>";
             echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+            echo "</div>";
+            echo "</div>";
         }
     } else {
 	echo "<div class='create-wrapper'>";
