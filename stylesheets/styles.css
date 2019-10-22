@@ -552,7 +552,9 @@ span {
   font-size: 20px;
 }
 
-
+::placeholder {
+  color: #e5e5e5;
+}
 
 
 .create-wrapper input:hover, .create-container button:hover {
