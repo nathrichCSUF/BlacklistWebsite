@@ -39,7 +39,7 @@
         echo "<h1>Create your Blackmail</h1>";
         echo "<form method='post' action='post_blackmail.php'>";
         echo "<div class='create-container'>";
-        echo "<input type='hidden' name = 'userID' value='$userIDRow'
+        echo "<input type='hidden' name = 'userID' value='$userIDRow'>
         <label for='t1'>Title</label>
         <input class='t1' type='text' name='title' value='' required>
 
