@@ -51,7 +51,7 @@ How to get our website running:
 
 <br>
 
-Sample Usage Scenario
+<h1>Sample Usage Scenario</h1>
 	<ol>Creating an account
 		<li>From index.php, click "Create Account".</li>
 		<li>Enter a username and Password.</li>
