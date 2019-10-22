@@ -9,7 +9,7 @@ Members:
 	<li>David Lee 626davidlee@csu.fullerton.edu</li>
 </ul>
 
-How to get our website running:  
+<h1>How to get our website running</h1>  
 <ol>
 <li>Download our repo here: https://github.com/nathrichCSUF/BlacklistWebsite</li>
 <li>Move /BlacklistWebsite to your web server's /htdocs folder.</li>
@@ -36,7 +36,7 @@ How to get our website running:
                           DislikeCount int(11),
                           userID int(5),
                           FOREIGN KEY (userID) REFERENCES account(userID)
-                        );"
+                        );
 <li>Create a user.</li>
 	<ol>
 		<li>Go to "Privileges"</li>
