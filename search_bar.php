@@ -22,7 +22,7 @@
       $searchTitle = $_POST['search'];
       $q = "SELECT bm.*
       FROM  Blackmail bm
-      WHERE bm.title = '$searchTitle';
+      WHERE bm.title like '%$searchTitle%';
       ";
 
       $r = mysqli_query($dbc, $q);
@@ -38,7 +38,7 @@
           echo "</div>";
         echo "<div class='post-wrapper'>";
         while($row = $r->fetch_assoc()){
-          
+
           echo "<div class='post-feed'>";
           echo "<div class='post-feed-wrapper'>";
           echo "<div class='img-wrapper'>";
