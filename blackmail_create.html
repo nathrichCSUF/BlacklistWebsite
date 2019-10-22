@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <form>
-      <label for="t1">Title</label>
-      <input class="t1" type="text" name="" value="" required>
 
-      <label for="t2">Demands</label>
-      <input class="t2" type="text" name="" value="" required>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark&display=swap" rel="stylesheet">
+  <title>Login</title>
+</head>
 
-      <label for="t3">Upload an image</label>
-      <input class="t3" type="file" name="" accept=".jpg, .jpeg, .png" required>
+<body>
+  <div class="create-wrapper">
+    <h1>Login to the Blacklist</h1>
+    <form method = "post" action="blackmail_create.php">
+      <div class="create-container">
+      <label for="username">Username:</label>
+      <input type="text" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" name="password" required>
+      <input type="submit" value="Submit">
+      <a href="index.php"><button type="button">Return to homepage</button></a>
+    </div>
+    </form>
+</div>
+</body>
 
-      <input type="submit" name="" value="Submit">
-      </form>
-
-  </body>
 </html>
