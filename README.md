@@ -1,7 +1,7 @@
 # Blacklist Website
 CPSC 349 Project 1 by The Boys: Website to blackmail people and pay ransoms!
 
-Members:
+Members:\n
 Nathaniel Richards nathrich23@csu.fullerton.edu
 Matthew Nguyen nmatthew45@csu.fullerton.edu
 Yafu Deng yafu123@csu.fullerton.edu
