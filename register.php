@@ -1,3 +1,8 @@
+<head>
+	<link rel="stylesheet" href = "stylesheets/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark&display=swap" rel="stylesheet">
+</head>
+
 <?php
 
 // Connect to the BlacklsitWebsite database.
@@ -41,8 +46,12 @@ if ($row) {
             echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
         }
     } else {
-        echo "This account already exists!";
-        echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+	echo "<div class='create-wrapper'>";
+	echo "<h1>This account already exists!</h1>";
+	echo "<div class='create-container'>";
+	echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+	echo "</div>";
+	echo "</div>";
         exit();
     }
 } else {
