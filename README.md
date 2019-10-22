@@ -15,28 +15,19 @@ Members:
 <li>Move /BlacklistWebsite to your web server's /htdocs folder.</li>
 <li>Start up your web server & MySQL (We are using XAMPP & phpMyAdmin).</li>
 <li>Create a database called "blacklistwebsite" and use it.</li>
-        MySQL commands: "CREATE DATABASE blacklistwebsite;"
-                        "use blacklistwebsite;"
+     MySQL commands:
+     <ol>
+       <li>"CREATE DATABASE blacklistwebsite;"</li>
+       <li>"use blacklistwebsite;"</li>
+     </ol>
 
-<li>Create two tables, account & blackmail.</li>
-        MySQL commands: "CREATE TABLE account (
-                          userID int(5) PRIMARY KEY,
-                          username varchar(10),
-                          password varchar(10)
-                         );"
-
-                        "CREATE TABLE blackmail (
-                          PostId INT(4) PRIMARY KEY,
-                          title varchar(100),
-                          description varchar(470),
-                          demandList varchar(470),
-                          image varchar(400),
-                          isPaid boolean,
-                          LikeCount int(11),
-                          DislikeCount int(11),
-                          userID int(5),
-                          FOREIGN KEY (userID) REFERENCES account(userID)
-                        );"
+		 <li>Create two tables, account & blackmail.</li>
+		      MySQL commands:
+		      <ol>
+		        <li>"CREATE TABLE account (userID int(5) PRIMARY KEY, username varchar(10), password varchar(10));"</li>
+						<li>"CREATE TABLE blackmail (postid INT(4) PRIMARY KEY, title VARCHAR(100), description VARCHAR(470),
+						         demandlist VARCHAR(470), image VARCHAR(400), ispaid BOOLEAN, likecount INT(11), dislikecount INT(11),
+						         userid INT(5), FOREIGN KEY (userid) REFERENCES account(userid));"</li>
 <li>Create a user.</li>
 	<ol>
 		<li>Go to "Privileges"</li>
