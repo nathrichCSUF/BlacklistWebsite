@@ -52,22 +52,26 @@ How to get our website running:
 <br>
 
 Sample Usage Scenario
-	<ol>Creating an account</ol>
+	<ol>Creating an account
 		<li>From index.php, click "Create Account".</li>
 		<li>Enter a username and Password.</li>
 		<li>Click "Submit".</li>
 		<li>Click "Return to homepage".</li>
-	<ol>Creating a blackmail</ol>
+	</ol>
+	<ol>Creating a blackmail
 		<li>From index.php, click "Create a Blackmail".</li>
 		<li>Enter login credentials. Click "Submit".</li>
 		<li>Enter a title, demands, description, image URL.</li>
 		<li>Click "Submit".</li>
 		<li>Click "Return to homepage".</li>
 		<li>The created blackmail should show up on the homepage.</li>
-	<ol>View your blackmails</ol>
+	</ol>
+	<ol>View your blackmails
 		<li>From index.php, click "View your Blackmails".</li>
 		<li>Enter login credentials. Click "Submit".</li>
 		<li>View your blackmails until you get bored.</li>
 		<li>Click "Return to homepage".</li>
-	<ol>Pay a ransom</ol>
+	</ol>
+	<ol>Pay a ransom
 		<li>From index.php, click "Pay Ransom" for a blackmail.</li>
+	</ol>
