@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark&display=swap" rel="stylesheet">
+
   <title>Create a Blackmail</title>
 </head>
 
@@ -23,9 +25,13 @@
       $row =$r->fetch_assoc();
       $inputPassword = $row['password'];
       if ($inputPassword!=$password){
-        echo "Wrong credentials";
-        echo "Go back to login page or click link below to create account";
-        echo "<a href='create_account.html'>Create Account!</a>";
+	echo "<div class='create-wrapper'>";      
+	echo "<h1>Wrong credentials</h1>";
+	echo "<div class='create-container'>";
+        echo "<h2>Go back to login page or click link below to create account</h2>";
+	echo "<a href='create_account.html'><button type='button'>Create Account!</button></a>";
+	echo "</div>";
+	echo "</div>";
       }
       else{
 
