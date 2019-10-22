@@ -28,6 +28,7 @@
   <div class="d2">
     <a href="blackmail_view.html"><button class="b2" type="button">View Your Blackmails</button></a>
     <a href="blackmail_create.html"><button class="b2" type="button">Create a Blackmail</button></a>
+    <a href="search_bar.html"><button class="b2" type="button">Search a Blackmail</button></a>
   </div>
   <div class="BlackmailList">
     <?php
@@ -46,7 +47,7 @@
           echo "<form method='post' action = 'payRansom.php'>";
           echo "<div class = 'post-feed-wrapper'>";
           echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
-          
+
           echo "<div class='img-wrapper'>";
             echo "<span>".$row['title']."</span>";
             echo   "<img src = ".$row['image'].">"; //Show image from link
@@ -63,7 +64,7 @@
             echo "<div class='ransom-wrapper'>";
             echo "<input type = 'submit'/ value='Pay Ransom'>";
             echo "</div>";
-            
+
           echo "</form>";
           echo "</div>";
 
