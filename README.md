@@ -36,7 +36,7 @@ Members:
                           DislikeCount int(11),
                           userID int(5),
                           FOREIGN KEY (userID) REFERENCES account(userID)
-                        );
+                        );"
 <li>Create a user.</li>
 	<ol>
 		<li>Go to "Privileges"</li>
