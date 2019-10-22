@@ -28,6 +28,7 @@
   <div class="d2">
     <a href="blackmail_view.html"><button class="b2" type="button">View Your Blackmails</button></a>
     <a href="blackmail_create.html"><button class="b2" type="button">Create a Blackmail</button></a>
+    <a href="search_bar.html"><button class="b2" type="button">Search a Blackmail</button></a>
   </div>
   <div class="BlackmailList">
     <?php
@@ -36,40 +37,40 @@
           echo "Cannot connect to MySQL. " . mysqli_connect_error();
           exit();
       }
-      $q = "SELECT * FROM Blackmail WHERE isPaid = false;";
+      $q = "SELECT * FROM Blackmail WHERE isPaid = 0;";
       $r = mysqli_query($dbc, $q);
       $j = 0;
       if ($r){ //If results came back
         echo "<div class = 'post-wrapper'>";
         while($row = $r->fetch_assoc()){ //output data
-          echo "<div class='post-feed'<";
-          echo "<form method='post' action = 'payRansom.php'>";
-          echo "<div class = 'post-feed-wrapper'>";
-          echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
-          
-          echo "<div class='img-wrapper'>";
-            echo "<span>".$row['title']."</span>";
-            echo   "<img src = ".$row['image'].">"; //Show image from link
-            echo "</div>";
+          echo "<div class='post-feed'>";
+            echo "<div class='post-feed-wrapper'>";  
+            echo "<form method='post' action = 'payRansom.php'>";
+            
+              echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
 
-            echo "<div class='demand-wrapper'>";
-            echo "<span>Demand(s)</span>";
-            echo "<ul>";
-            echo  "<li>".$row["demandList"]."</li>";
-            echo "</ul>";
-            echo "</div>";
+              echo "<div class='img-wrapper'>";
+                echo "<span>".$row['title']."</span>";
+                echo   "<img src = ".$row['image'].">"; //Show image from link
+              echo "</div>";
+
+              echo "<div class='demand-wrapper'>";
+                echo "<span>Demand(s)</span>";
+                echo "<ul>";
+                echo  "<li>".$row['demandList']."</li>";
+                echo "</ul>";
+              echo "</div>";
 
 
-            echo "<div class='ransom-wrapper'>";
-            echo "<input type = 'submit'/ value='Pay Ransom'>";
-            echo "</div>";
+              echo "<div class='ransom-wrapper'>";
+                echo "<input type = 'submit'/ value='Pay Ransom'>";
+              echo "</div>";
             
           echo "</form>";
-          echo "</div>";
+          echo"</div>";
 
-          echo "<div class='post-feed-desc'>Description: ".$row["description"]."</div>";
-          echo "</div>";
-
+        echo "<div class='post-feed-desc'>Description: ".$row['description']."</div>";
+        echo "</div>";
         }
         echo "</div>";
       }

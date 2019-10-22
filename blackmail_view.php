@@ -32,13 +32,16 @@
         echo "<h1>Wrong credentials</h1>";
         echo "<h2>Go back to login page or click link below to create account</h2>";
         echo "<div class='create-container'>";
+        echo "<a href='blackmail_view.html'><button type='button'>Return to Login</button></a>";
         echo "<a href='create_account.html'><button type='button'>Create Account!</button></a>";
         echo "</div>";
         echo "</div>";
       }
       else{
         $r2 = mysqli_query($dbc,$q2);
-
+          echo "<div class='create-container'>";
+          echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+          echo "</div>";
           echo "<div class='post-wrapper'>";
           while($row2 = $r2->fetch_assoc())
           {
@@ -57,7 +60,7 @@
               echo "</div>"; //end demand-wrapper
               echo "</div>"; //end post-feed-wrapper
               if($row2['isPaid']){
-                echo "<b>Paid Off!</b>";
+                echo "<span class='paid'>Paid Off!</span>";
               }
               echo "</div>"; //end post-feed
           }

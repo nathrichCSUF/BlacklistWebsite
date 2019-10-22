@@ -21,25 +21,27 @@
     $q = "SELECT * FROM Account WHERE Username = '$username'AND Password = '$password'";
     $r = mysqli_query($dbc, $q);
 
-    
+
       $row =$r->fetch_assoc();
       $inputPassword = $row['password'];
       if ($inputPassword!=$password){
-	echo "<div class='create-wrapper'>";      
-	echo "<h1>Wrong credentials</h1>";
-	echo "<div class='create-container'>";
+	
+  echo "<div class='create-wrapper'>";
+        echo "<h1>Wrong credentials</h1>";
         echo "<h2>Go back to login page or click link below to create account</h2>";
-	echo "<a href='create_account.html'><button type='button'>Create Account!</button></a>";
-	echo "</div>";
-	echo "</div>";
+        echo "<div class='create-container'>";
+        echo "<a href='blackmail_create.html'><button type='button'>Return to Login</button></a>";
+        echo "<a href='create_account.html'><button type='button'>Create Account!</button></a>";
+        echo "</div>";
+        echo "</div>";
       }
       else{
-
         $userIDRow = $row['userID'];
-
-        echo "
-        <form method='post' action='post_blackmail.php'>";
-        echo "<input type='hidden' name = 'userID' value='$userIDRow'
+        echo "<div class='create-wrapper'>";
+        echo "<h1>Create your Blackmail</h1>";
+        echo "<form method='post' action='post_blackmail.php'>";
+        echo "<div class='create-container'>";
+        echo "<input type='hidden' name = 'userID' value='$userIDRow'>
         <label for='t1'>Title</label>
         <input class='t1' type='text' name='title' value='' required>
 
@@ -47,14 +49,17 @@
         <input class='t2' type='text' name='demands' value='' required>
 
         <label for='t3'>Description</label>
-        <input class='t3' type='text' name='description' value=''>
+        <input class='t3' type='text' name='description' value='' required>
 
-        <label for='t4'>Upload an image</label>
-        <input class='t4' type='text' name='imageURL' accept='.jpg, .jpeg, .png' >
+        <label for='t4'>Image URL</label>
+        <input class='t4' type='url' name='imageURL' accept='.jpg, .jpeg, .png' required>
 
         <input type='submit' name='' value='Submit'>
       </form>
       ";
+      echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+      echo "</div>";
+      echo "</div>";
 
     }
 

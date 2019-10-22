@@ -295,8 +295,9 @@ button {
 .d2 {
   position: relative;
   margin-top: 50px;
-  width: 25%;
-  /* border: solid 1px red; */
+  width: 50%;
+  min-width: 400px;
+  /* border: solid 1px blue; */
   height: auto;
   display: flex;
   flex-direction: row;
@@ -305,8 +306,7 @@ button {
 }
 
 .b2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
   /* color: #FCA311; */
   color: #fa2828;
   border: 2px solid #fa2828;
@@ -334,6 +334,7 @@ button {
 }
 
 .post-feed {
+  /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -378,22 +379,36 @@ button {
 }
 
 .post-feed-wrapper {
-  border-radius: 5px;
+  /* border-radius: 5px;
   margin-top: 15px;
   margin-bottom:15px;
-  padding: 10px;
+  padding: 10px; */
+  /* border: 2px solid blue; */
   /* background-color: #14213D; */
   background-color: black;
   color: #e5e5e5;
   position: relative;
+  width: 100%;
+  /* width: auto; */
   /* border-bottom: 1px gray solid; */
-  width: 97%;
-  left: 1%;
+  /* width: 97%;
+  left: 1%; */
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: auto;
+}
+
+.post-feed-wrapper form {
+  display: flex;
+  /* border: 3px solid white; */
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
@@ -510,6 +525,8 @@ span {
 
 .create-container button {
   border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: #fa2828;
   border: 2px solid #fa2828;
   background-color: black;
@@ -537,9 +554,19 @@ span {
   font-size: 20px;
 }
 
+::placeholder {
+  color: #e5e5e5;
+}
+
 
 .create-wrapper input:hover, .create-container button:hover {
   background-color: #fa2828;
   color: black;
 
+}
+
+.paid {
+  color: #00ff00;
+  font-size: 25px;
+  
 }

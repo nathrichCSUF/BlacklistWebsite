@@ -20,11 +20,21 @@ $user_id=$_POST['userID'];
 $q = "INSERT INTO blackmail VALUES('$post_id','$bm_title','$description','$demands','$imageURL',false,'0','0','$user_id')";
 $r = mysqli_query($dbc, $q); //Execute query
 if (!$r) {
+    echo "<div class='create-wrapper'>";
+    echo "<div class='create-container'>";
     echo "Could not Post Blackmail " . mysqli_error($dbc);
+    echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+    echo "</div>";
+    echo "</div>";
     exit();
 }
 else{
-  echo "Blackmail posted successfully";
+  echo "<div class='create-wrapper'>";
+  echo "<div class='create-container'>";
+  echo "<h1>Blackmail posted successfully</h1>";
+  echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+  echo "</div>";
+  echo "</div>";
 }
 
 ?>
@@ -33,9 +43,11 @@ else{
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark&display=swap" rel="stylesheet">
     <title></title>
   </head>
   <body>
-      <a href="index.php"><button type="button">Return to homepage</button></a>
+      <!-- <a href="index.php"><button type="button">Return to homepage</button></a> -->
   </body>
 </html>
