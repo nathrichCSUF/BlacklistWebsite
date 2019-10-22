@@ -36,8 +36,8 @@
       else{
         $userIDRow = $row['userID'];
         echo "<div class='create-wrapper'>";
-        echo "<form method='post' action='post_blackmail.php'>";
         echo "<h1>Create your Blackmail</h1>";
+        echo "<form method='post' action='post_blackmail.php'>";
         echo "<div class='create-container'>";
         echo "<input type='hidden' name = 'userID' value='$userIDRow'
         <label for='t1'>Title</label>
