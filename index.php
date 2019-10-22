@@ -44,8 +44,9 @@
         echo "<div class = 'post-wrapper'>";
         while($row = $r->fetch_assoc()){ //output data
           echo "<div class='post-feed'>";
+            echo "<div class='post-feed-wrapper'>";  
             echo "<form method='post' action = 'payRansom.php'>";
-            echo "<div class = 'post-feed-wrapper'>";
+            
               echo "<input type='hidden' name='PostId' value = ".$row['PostId']."/>";
 
               echo "<div class='img-wrapper'>";
@@ -64,13 +65,12 @@
               echo "<div class='ransom-wrapper'>";
                 echo "<input type = 'submit'/ value='Pay Ransom'>";
               echo "</div>";
-            echo"</div>";
+            
           echo "</form>";
-        echo "</div>";
+          echo"</div>";
 
         echo "<div class='post-feed-desc'>Description: ".$row['description']."</div>";
         echo "</div>";
-
         }
         echo "</div>";
       }
