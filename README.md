@@ -63,4 +63,5 @@ Members:
 	</ol>
 	<ol>Pay a ransom
 		<li>From index.php, click "Pay Ransom" for a blackmail.</li>
+		<li>Click "Return to homepage".</li>
 	</ol>
