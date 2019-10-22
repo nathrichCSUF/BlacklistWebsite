@@ -29,8 +29,12 @@
       $count = mysqli_num_rows($r); //count how many outputs
 
       if($count == 0) {
-        echo "There is no matched result.";
-        echo "<a href='search_bar.html'>Enter TiTle!</a>";
+        echo "<div class='create-wrapper'>";
+        echo "<h1>There is no matched result.</h1>";
+        echo "<div class='create-container'>";
+        echo "<a href='search_bar.html'><button type='button'>Try Another Search</button></a>";
+        echo "</div>";
+        echo "</div>";
       }
       else {
         echo "<div class='create-container'>";
