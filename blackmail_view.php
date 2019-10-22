@@ -38,7 +38,9 @@
       }
       else{
         $r2 = mysqli_query($dbc,$q2);
-
+          echo "<div class='create-container'>";
+          echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+          echo "</div>";
           echo "<div class='post-wrapper'>";
           while($row2 = $r2->fetch_assoc())
           {

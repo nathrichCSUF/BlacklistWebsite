@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark&display=swap" rel="stylesheet">
     <title>Search Bar</title>
   </head>
   <body>
@@ -32,7 +33,12 @@
         echo "<a href='search_bar.html'>Enter TiTle!</a>";
       }
       else {
+        echo "<div class='create-container'>";
+          echo "<a href='index.php'><button type='button'>Return to homepage</button></a>";
+          echo "</div>";
+        echo "<div class='post-wrapper'>";
         while($row = $r->fetch_assoc()){
+          
           echo "<div class='post-feed'>";
           echo "<div class='post-feed-wrapper'>";
           echo "<div class='img-wrapper'>";
@@ -47,8 +53,9 @@
           echo "</ul>";
           echo "</div>"; //end demand-wrapper
           echo "</div>"; //end post-feed-wrapper
+          echo "</div>"; //end post-feed
         }
-        echo "</div>";
+        echo "</div>"; //end post-wrapper
       }
 
     }

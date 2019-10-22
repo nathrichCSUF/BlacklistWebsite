@@ -295,8 +295,9 @@ button {
 .d2 {
   position: relative;
   margin-top: 50px;
-  width: 25%;
-  /* border: solid 1px red; */
+  width: 50%;
+  min-width: 400px;
+  /* border: solid 1px blue; */
   height: auto;
   display: flex;
   flex-direction: row;
@@ -305,8 +306,7 @@ button {
 }
 
 .b2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
   /* color: #FCA311; */
   color: #fa2828;
   border: 2px solid #fa2828;
