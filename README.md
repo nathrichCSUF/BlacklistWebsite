@@ -13,7 +13,7 @@ Members:
 <ol>
 <li>Download our repo here: https://github.com/nathrichCSUF/BlacklistWebsite</li>
 <li>Move /BlacklistWebsite to your web server's /htdocs folder.</li>
-<li>Start up your web server & MySQL (We are using XAMPP & phpMyAdmin).</li>
+<li>Start up your web server & MySQL (We are using Apache, phpMyAdmin, and MySQL via XAMPP).</li>
 <li>Create a database called "blacklistwebsite" and use it.</li>
      MySQL commands:
      <ol>
